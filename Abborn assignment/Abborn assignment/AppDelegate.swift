@@ -6,14 +6,43 @@
 //
 
 import UIKit
+import RealmSwift
+
+func bundlePath(path: String) -> String? {
+    let resourcePath = Bundle.main.resourcePath as NSString?
+    return resourcePath?.appendingPathComponent(path)
+}
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
-
-
+    
+    func openRealm() {
+        let defaultPath = Realm.Configuration.defaultConfiguration.fileURL?.path
+        if let v0Path = bundlePath(path: "default.realm") {
+            if FileManager.default.fileExists(atPath: defaultPath!) {
+                do {
+                    try FileManager.default.removeItem(atPath:defaultPath!)
+                    print("Remove old file")
+                } catch {
+                    print("Wasn't removed")
+                }
+            }
+            do {
+                try FileManager.default.copyItem(atPath: v0Path, toPath: defaultPath!)
+                print("Copied.")
+            } catch {
+                print("Wasn't copied.")
+            }
+        }
+    }
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+       // print(Realm.Configuration.defaultConfiguration.fileURL?.path)
+        openRealm()
+        
+        _ = try! Realm()
+        
         return true
     }
 

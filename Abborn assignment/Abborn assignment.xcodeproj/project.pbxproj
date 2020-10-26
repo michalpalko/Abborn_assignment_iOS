@@ -3,11 +3,17 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		017BE711A03E372EC554A44A /* Pods_Abborn_assignmentTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FD6652A0B6B910A245D4B42 /* Pods_Abborn_assignmentTests.framework */; };
+		523C00092545D134001C63B1 /* MonthSectionSlovak.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523C00082545D134001C63B1 /* MonthSectionSlovak.swift */; };
+		523C000A2545D134001C63B1 /* MonthSectionSlovak.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523C00082545D134001C63B1 /* MonthSectionSlovak.swift */; };
+		523C000B2545D134001C63B1 /* MonthSectionSlovak.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523C00082545D134001C63B1 /* MonthSectionSlovak.swift */; };
+		523C001325473C66001C63B1 /* MonthSectionCzech.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523C001225473C66001C63B1 /* MonthSectionCzech.swift */; };
+		523C001425473C66001C63B1 /* MonthSectionCzech.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523C001225473C66001C63B1 /* MonthSectionCzech.swift */; };
+		523C001525473C66001C63B1 /* MonthSectionCzech.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523C001225473C66001C63B1 /* MonthSectionCzech.swift */; };
 		523CFFA425441C1E001C63B1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523CFFA325441C1E001C63B1 /* AppDelegate.swift */; };
 		523CFFA625441C1E001C63B1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523CFFA525441C1E001C63B1 /* SceneDelegate.swift */; };
 		523CFFA825441C1E001C63B1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523CFFA725441C1E001C63B1 /* ViewController.swift */; };
@@ -16,6 +22,15 @@
 		523CFFB025441C20001C63B1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 523CFFAE25441C20001C63B1 /* LaunchScreen.storyboard */; };
 		523CFFBB25441C21001C63B1 /* Abborn_assignmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523CFFBA25441C21001C63B1 /* Abborn_assignmentTests.swift */; };
 		523CFFC625441C21001C63B1 /* Abborn_assignmentUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523CFFC525441C21001C63B1 /* Abborn_assignmentUITests.swift */; };
+		523CFFE225443DA6001C63B1 /* Slovensko.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523CFFE125443DA6001C63B1 /* Slovensko.swift */; };
+		523CFFE725443DC0001C63B1 /* Cesko.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523CFFE625443DC0001C63B1 /* Cesko.swift */; };
+		523CFFF12544CBC2001C63B1 /* default.realm in Resources */ = {isa = PBXBuildFile; fileRef = 523CFFF02544CBC2001C63B1 /* default.realm */; };
+		523CFFF72544CC76001C63B1 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523CFFF52544CC76001C63B1 /* TableViewCell.swift */; };
+		523CFFF82544CC76001C63B1 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523CFFF52544CC76001C63B1 /* TableViewCell.swift */; };
+		523CFFF92544CC76001C63B1 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523CFFF52544CC76001C63B1 /* TableViewCell.swift */; };
+		523CFFFA2544CC76001C63B1 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 523CFFF62544CC76001C63B1 /* TableViewCell.xib */; };
+		523CFFFB2544CC76001C63B1 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 523CFFF62544CC76001C63B1 /* TableViewCell.xib */; };
+		523CFFFC2544CC76001C63B1 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 523CFFF62544CC76001C63B1 /* TableViewCell.xib */; };
 		909F8075224A7BB8A97D2759 /* Pods_Abborn_assignment_Abborn_assignmentUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C7C0284A91B5344AFABE58D /* Pods_Abborn_assignment_Abborn_assignmentUITests.framework */; };
 		B391CC33AD76F4F41ACC26DD /* Pods_Abborn_assignment.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B224B78B7FB86CCF621C470 /* Pods_Abborn_assignment.framework */; };
 /* End PBXBuildFile section */
@@ -42,6 +57,8 @@
 		3FD6652A0B6B910A245D4B42 /* Pods_Abborn_assignmentTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Abborn_assignmentTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4604BABF0C19AADB7C50879D /* Pods-Abborn assignment.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Abborn assignment.debug.xcconfig"; path = "Target Support Files/Pods-Abborn assignment/Pods-Abborn assignment.debug.xcconfig"; sourceTree = "<group>"; };
 		4C7C0284A91B5344AFABE58D /* Pods_Abborn_assignment_Abborn_assignmentUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Abborn_assignment_Abborn_assignmentUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		523C00082545D134001C63B1 /* MonthSectionSlovak.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthSectionSlovak.swift; sourceTree = "<group>"; };
+		523C001225473C66001C63B1 /* MonthSectionCzech.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonthSectionCzech.swift; sourceTree = "<group>"; };
 		523CFFA025441C1E001C63B1 /* Abborn assignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Abborn assignment.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		523CFFA325441C1E001C63B1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		523CFFA525441C1E001C63B1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -56,6 +73,11 @@
 		523CFFC125441C21001C63B1 /* Abborn assignmentUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Abborn assignmentUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		523CFFC525441C21001C63B1 /* Abborn_assignmentUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Abborn_assignmentUITests.swift; sourceTree = "<group>"; };
 		523CFFC725441C21001C63B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		523CFFE125443DA6001C63B1 /* Slovensko.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Slovensko.swift; sourceTree = "<group>"; };
+		523CFFE625443DC0001C63B1 /* Cesko.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cesko.swift; sourceTree = "<group>"; };
+		523CFFF02544CBC2001C63B1 /* default.realm */ = {isa = PBXFileReference; lastKnownFileType = file; name = default.realm; path = "Abborn assignment/Database/default.realm"; sourceTree = SOURCE_ROOT; };
+		523CFFF52544CC76001C63B1 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		523CFFF62544CC76001C63B1 /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
 		740ADE99D235012B310EF23B /* Pods-Abborn assignmentTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Abborn assignmentTests.debug.xcconfig"; path = "Target Support Files/Pods-Abborn assignmentTests/Pods-Abborn assignmentTests.debug.xcconfig"; sourceTree = "<group>"; };
 		8D8508375C924CB6954068F6 /* Pods-Abborn assignmentTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Abborn assignmentTests.release.xcconfig"; path = "Target Support Files/Pods-Abborn assignmentTests/Pods-Abborn assignmentTests.release.xcconfig"; sourceTree = "<group>"; };
 		9B224B78B7FB86CCF621C470 /* Pods_Abborn_assignment.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Abborn_assignment.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -91,6 +113,51 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		523C001A254753F4001C63B1 /* DatabaseModels */ = {
+			isa = PBXGroup;
+			children = (
+				523CFFE125443DA6001C63B1 /* Slovensko.swift */,
+				523CFFE625443DC0001C63B1 /* Cesko.swift */,
+			);
+			path = DatabaseModels;
+			sourceTree = "<group>";
+		};
+		523C001E25475403001C63B1 /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				523CFFF02544CBC2001C63B1 /* default.realm */,
+			);
+			path = Database;
+			sourceTree = "<group>";
+		};
+		523C001F25475424001C63B1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				523CFFA925441C1E001C63B1 /* Main.storyboard */,
+				523CFFAE25441C20001C63B1 /* LaunchScreen.storyboard */,
+				523CFFF62544CC76001C63B1 /* TableViewCell.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		523C002025475432001C63B1 /* CocoaTouchClasses */ = {
+			isa = PBXGroup;
+			children = (
+				523CFFA725441C1E001C63B1 /* ViewController.swift */,
+				523CFFF52544CC76001C63B1 /* TableViewCell.swift */,
+			);
+			path = CocoaTouchClasses;
+			sourceTree = "<group>";
+		};
+		523C00212547544C001C63B1 /* SectionModels */ = {
+			isa = PBXGroup;
+			children = (
+				523C00082545D134001C63B1 /* MonthSectionSlovak.swift */,
+				523C001225473C66001C63B1 /* MonthSectionCzech.swift */,
+			);
+			path = SectionModels;
+			sourceTree = "<group>";
+		};
 		523CFF9725441C1D001C63B1 = {
 			isa = PBXGroup;
 			children = (
@@ -118,11 +185,13 @@
 			children = (
 				523CFFA325441C1E001C63B1 /* AppDelegate.swift */,
 				523CFFA525441C1E001C63B1 /* SceneDelegate.swift */,
-				523CFFA725441C1E001C63B1 /* ViewController.swift */,
-				523CFFA925441C1E001C63B1 /* Main.storyboard */,
+				523C002025475432001C63B1 /* CocoaTouchClasses */,
+				523C001F25475424001C63B1 /* Views */,
 				523CFFAC25441C20001C63B1 /* Assets.xcassets */,
-				523CFFAE25441C20001C63B1 /* LaunchScreen.storyboard */,
+				523C001E25475403001C63B1 /* Database */,
 				523CFFB125441C20001C63B1 /* Info.plist */,
+				523C001A254753F4001C63B1 /* DatabaseModels */,
+				523C00212547544C001C63B1 /* SectionModels */,
 			);
 			path = "Abborn assignment";
 			sourceTree = "<group>";
@@ -155,7 +224,6 @@
 				740ADE99D235012B310EF23B /* Pods-Abborn assignmentTests.debug.xcconfig */,
 				8D8508375C924CB6954068F6 /* Pods-Abborn assignmentTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -278,6 +346,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				523CFFB025441C20001C63B1 /* LaunchScreen.storyboard in Resources */,
+				523CFFFA2544CC76001C63B1 /* TableViewCell.xib in Resources */,
+				523CFFF12544CBC2001C63B1 /* default.realm in Resources */,
 				523CFFAD25441C20001C63B1 /* Assets.xcassets in Resources */,
 				523CFFAB25441C1E001C63B1 /* Main.storyboard in Resources */,
 			);
@@ -287,6 +357,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				523CFFFB2544CC76001C63B1 /* TableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,6 +365,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				523CFFFC2544CC76001C63B1 /* TableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -408,7 +480,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				523CFFA825441C1E001C63B1 /* ViewController.swift in Sources */,
+				523CFFE725443DC0001C63B1 /* Cesko.swift in Sources */,
+				523C001325473C66001C63B1 /* MonthSectionCzech.swift in Sources */,
+				523C00092545D134001C63B1 /* MonthSectionSlovak.swift in Sources */,
 				523CFFA425441C1E001C63B1 /* AppDelegate.swift in Sources */,
+				523CFFF72544CC76001C63B1 /* TableViewCell.swift in Sources */,
+				523CFFE225443DA6001C63B1 /* Slovensko.swift in Sources */,
 				523CFFA625441C1E001C63B1 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -418,6 +495,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				523CFFBB25441C21001C63B1 /* Abborn_assignmentTests.swift in Sources */,
+				523C000A2545D134001C63B1 /* MonthSectionSlovak.swift in Sources */,
+				523C001425473C66001C63B1 /* MonthSectionCzech.swift in Sources */,
+				523CFFF82544CC76001C63B1 /* TableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -426,6 +506,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				523CFFC625441C21001C63B1 /* Abborn_assignmentUITests.swift in Sources */,
+				523C000B2545D134001C63B1 /* MonthSectionSlovak.swift in Sources */,
+				523C001525473C66001C63B1 /* MonthSectionCzech.swift in Sources */,
+				523CFFF92544CC76001C63B1 /* TableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Abborn_assignment" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="ngq-Eh-v3i">
+                                <rect key="frame" x="125.5" y="831" width="163" height="32"/>
+                                <segments>
+                                    <segment title="Slovensko"/>
+                                    <segment title="Česko"/>
+                                </segments>
+                                <connections>
+                                    <action selector="switchCountry:" destination="BYZ-38-t0r" eventType="valueChanged" id="KZS-ay-NTi"/>
+                                </connections>
+                            </segmentedControl>
+                            <searchBar contentMode="redraw" placeholder="Vyhľadať meno..." translatesAutoresizingMaskIntoConstraints="NO" id="ni8-eV-ohq">
+                                <rect key="frame" x="0.0" y="44" width="414" height="56"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="8iE-GS-wap"/>
+                                </connections>
+                            </searchBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="d3y-aY-0z7" userLabel="Slovensko TableView">
+                                <rect key="frame" x="5" y="100" width="404" height="726"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="WIW-1N-ljx">
+                                        <rect key="frame" x="0.0" y="28" width="404" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="WIW-1N-ljx" id="OdA-hv-9dl">
+                                            <rect key="frame" x="0.0" y="0.0" width="404" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="sE0-rS-Lgv"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="Irg-Gd-ES5"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="d3y-aY-0z7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="5" id="8bU-ja-oCf"/>
+                            <constraint firstItem="ni8-eV-ohq" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Gco-Qx-Zdu"/>
+                            <constraint firstItem="d3y-aY-0z7" firstAttribute="top" secondItem="ni8-eV-ohq" secondAttribute="bottom" id="JBh-hN-3P5"/>
+                            <constraint firstItem="ni8-eV-ohq" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="JLb-Oa-roA"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="d3y-aY-0z7" secondAttribute="trailing" constant="5" id="WcJ-Dw-id5"/>
+                            <constraint firstItem="ngq-Eh-v3i" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="eXk-tu-qAo"/>
+                            <constraint firstItem="ngq-Eh-v3i" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fRH-Eh-Yqm"/>
+                            <constraint firstItem="ni8-eV-ohq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="g6D-XP-tAA"/>
+                            <constraint firstItem="ngq-Eh-v3i" firstAttribute="top" secondItem="d3y-aY-0z7" secondAttribute="bottom" constant="5" id="shd-0d-d6a"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="searchbar" destination="ni8-eV-ohq" id="PYU-Po-SET"/>
+                        <outlet property="segmentedControl" destination="ngq-Eh-v3i" id="X3W-c8-8I3"/>
+                        <outlet property="tableView" destination="d3y-aY-0z7" id="Xj1-ih-nbd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140.57971014492756" y="83.705357142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
