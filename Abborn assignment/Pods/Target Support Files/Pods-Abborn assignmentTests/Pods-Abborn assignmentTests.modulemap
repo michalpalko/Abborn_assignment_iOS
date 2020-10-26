@@ -1,0 +1,6 @@
+framework module Pods_Abborn_assignmentTests {
+  umbrella header "Pods-Abborn assignmentTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
